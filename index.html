@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkIndia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="explore-filter">
+          <span class="explore">Explore</span>
+          <span class="filter">Filter</span>
+        </div>
+        <form id="search-form">
+          <input type="search" id="search-input" placeholder="Search...">
+        </form>
+      </div>
+    <div id="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+    <div id="item-list">
+        <!-- List of items will be displayed here -->
+    </div>
+    <div id="item-grid">
+        <!-- Grid of items will be displayed here -->
+    </div>
+    
+    <div class="bottom-bar">
+        <div class="button-group">
+            <button class="nav-button" id="search-button-list"></button>
+            <button class="nav-button" id="search-button-grid"></button>
+            <button class="nav-button" id="add-button">Add Item</button>
+            <button class="nav-button" id="rand-button"></button>
+            <button class="nav-button" id="rand-button"></button>
+        </div>
+        <!-- Add Item Section -->
+        <section id="add-item-section" style="display: none;">
+          <h2>Add Item</h2>
+          <form id="add-item-form">
+            <!--label for="item-name">Item Name:</label-->
+            <input type="text" id="item-name" name="item-name" placeholder="Item Name"><br><br>
+            <input type="number" id="item-price" name="item-price" placeholder="Item Price"><br><br>
+            <select id="shipping-method" name="shipping-method" placeholder="Shipping Method">
+              <option value="same-day-shipping">Same Day Shipping</option>
+              <option value="none">None</option>
+            </select><br><br>
+            <button id="submit-btn">Submit</button>
+          </form>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
